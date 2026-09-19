@@ -9,10 +9,12 @@ import net.minecraft.client.render.RenderTickCounter;
 
 public class HeadHudClient implements ClientModInitializer {
 
-    // Yaha se head ka size aur position badal sakte ho
-    private static final int SIZE = 16;
-    private static final int OFFSET_X = 0;  // Maine isko 0 kar diya hai taaki yeh perfect center me aaye
-    private static final int OFFSET_Y = -4; // negative = aur upar
+    // Head ka size chota kar diya (16 se 12)
+    private static final int SIZE = 12;
+    // Perfect center ke liye OFFSET_X ko 0 rakha hai
+    private static final int OFFSET_X = 0;  
+    // Head ko aur upar karne ke liye OFFSET_Y ko -16 kar diya
+    private static final int OFFSET_Y = -16; 
 
     @Override
     public void onInitializeClient() {
