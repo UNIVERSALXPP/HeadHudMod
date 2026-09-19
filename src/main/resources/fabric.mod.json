@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "headhud",
+  "version": "${version}",
+  "name": "Head HUD",
+  "description": "Shows your own skin head above the hotbar, next to the health bar.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.headhud.HeadHudClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
