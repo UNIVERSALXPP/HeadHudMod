@@ -23,6 +23,9 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
       
+    - name: Generate Wrapper (Fix for missing gradlew)
+      run: gradle wrapper
+      
     - name: Make gradlew executable
       run: chmod +x ./gradlew
       
@@ -34,3 +37,4 @@ jobs:
       with:
         name: head-hud-mod-1.21.4
         path: build/libs/
+        
