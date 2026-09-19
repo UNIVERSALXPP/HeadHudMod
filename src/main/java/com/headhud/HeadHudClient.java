@@ -11,7 +11,7 @@ public class HeadHudClient implements ClientModInitializer {
 
     // Yaha se head ka size aur position badal sakte ho
     private static final int SIZE = 16;
-    private static final int OFFSET_X = -4; // negative = aur left
+    private static final int OFFSET_X = 0;  // Maine isko 0 kar diya hai taaki yeh perfect center me aaye
     private static final int OFFSET_Y = -4; // negative = aur upar
 
     @Override
@@ -26,8 +26,8 @@ public class HeadHudClient implements ClientModInitializer {
         int screenW = context.getScaledWindowWidth();
         int screenH = context.getScaledWindowHeight();
 
-        // Hotbar ke left-top corner ke paas (health bar ke left me)
-        int x = screenW / 2 - 91 - SIZE + OFFSET_X;
+        // Hearts aur Hunger bar ke bilkul center me set karne ke liye
+        int x = (screenW / 2) - (SIZE / 2) + OFFSET_X;
         int y = screenH - 39 + OFFSET_Y;
 
         PlayerSkinDrawer.draw(context, mc.player.getSkinTextures(), x, y, SIZE);
