@@ -14,7 +14,7 @@ public class HeadHudClient implements ClientModInitializer {
     // Perfect center ke liye OFFSET_X ko 0 rakha hai
     private static final int OFFSET_X = 0;  
     // Head ko aur upar karne ke liye OFFSET_Y ko -16 kar diya
-    private static final int OFFSET_Y = -15; 
+    private static final int OFFSET_Y = -14; 
 
     @Override
     public void onInitializeClient() {
